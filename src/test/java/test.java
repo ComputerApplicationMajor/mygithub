@@ -20,6 +20,6 @@ public class test {
 
         String result = HttpKit.get("http://www.yiyu.com/profile",null,map);
         System.out.println(result);
-
+        System.out.println();
     }
 }
