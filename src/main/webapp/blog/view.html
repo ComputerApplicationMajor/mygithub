@@ -1,0 +1,21 @@
+<#include "/common/_layout.html" />
+<@layout>
+<h1>Blog管理 ---&gt; 查看Blog
+</h1>
+<div class="form_box">
+	<form action="/blog/save" method="post">
+		<fieldset class="solid">
+			<legend>创建Blog</legend>
+			<input type="hidden" name="blog.id" value="${(blog.id)!''}" />
+			<div>
+				<label>标题</label>
+				<input type="text" name="blog.title" value="${(blog.title)!''}" />${titleMsg!}
+			</div>
+			<div>
+				<label>内容</label>
+				<textarea name="blog.content" cols="80" rows="10">${(blog.content)!''}</textarea>${contentMsg!}
+			</div>
+		</fieldset>
+</form>
+</div>
+</@layout>
